@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  /* Sidebar (consistent with other pages) */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    margin: 15px;
+    line-height: 1.3;
+  }
+
+  .sidebar a:hover {
+    font-weight: bold;
+  }
+
+  /* Content area */
+  .content {
+    margin-left: 200px;
+    position: relative;
+    height: 100vh;
+  }
+
+  /* Figures */
+  .figure {
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+
+  .figure:hover {
+    transform: scale(1.05);
+  }
+
+  /* Positions of figures */
+  .figure.swing {
+    left: 200px;
+    bottom: 150px;
+    width: 200px;
+  }
+
+  .figure.meditating {
+    left: 550px;
+    bottom: 80px;
+    width: 250px;
+  }
+
+  .figure.bodybuilder {
+    right: 250px;
+    bottom: 120px;
+    width: 250px;
+  }
+
+  /* About Us label/button */
+  .about-btn {
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+    background-color: #e0e0e0;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+
+  .about-btn:hover {
+    background-color: #cfcfcf;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <a href="index.html">Welcome</a>
+  <a href="arms.html">Arms exercises</a>
+  <a href="legs.html">Legs exercises</a>
+  <a href="back.html">Back exercises</a>
+  <a href="chest.html">Chest exercises</a>
+  <a href="abs.html">Abs exercises</a>
+  <a href="about.html">About us</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+  <img src="swing-man.png" class="figure swing" alt="Man on tire swing">
+  <img src="meditating-man.png" class="figure meditating" alt="Meditating man">
+  <img src="bodybuilder.png" class="figure bodybuilder" alt="Bodybuilder standing">
+  <a href="#" class="about-btn">About us</a>
+</div>
+
+</body>
+</html>
