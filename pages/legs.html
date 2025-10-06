@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legs Exercises</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    margin: 15px;
+    line-height: 1.3;
+  }
+
+  .sidebar a:hover {
+    font-weight: bold;
+  }
+
+  /* Main content */
+  .content {
+    margin-left: 200px;
+    padding: 20px 40px;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+
+  /* Exercise grid */
+  .exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .exercise {
+    text-align: center;
+  }
+
+  .exercise img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+
+  .exercise p {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .download-icon {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <a href="#">Welcome</a>
+  <a href="arms.html">Arms exercises</a>
+  <a href="#">Legs exercises</a>
+  <a href="#">Back exercises</a>
+  <a href="#">Chest exercises</a>
+  <a href="#">Abs exercises</a>
+  <a href="#">About us</a>
+</div>
+
+<!-- Main content -->
+<div class="content">
+  <h1>Legs exercises</h1>
+
+  <div class="exercise-grid">
+    <div class="exercise">
+      <img src="squat.png" alt="Barbell Squat">
+      <p>Barbell Squat &#128190;</p>
+    </div>
+    <div class="exercise">
+      <img src="lunges.png" alt="Dumbbell Lunges">
+      <p>Dumbbell Lunges &#128190;</p>
+    </div>
+    <div class="exercise">
+      <img src="leg-press.png" alt="Leg Press">
+      <p>Leg Press &#128190;</p>
+    </div>
+    <div class="exercise">
+      <img src="leg-extension.png" alt="Leg Extension">
+      <p>Leg Extension &#128190;</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
